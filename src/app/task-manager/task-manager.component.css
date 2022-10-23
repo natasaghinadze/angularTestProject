@@ -1,0 +1,12 @@
+.left{
+    background-color: #3a006b;
+}
+.right{
+    background-color: steelblue;
+}
+section{
+    height: 100vh;
+}
+section aside{
+    height: 100%;
+}

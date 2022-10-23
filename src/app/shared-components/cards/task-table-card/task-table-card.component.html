@@ -1,0 +1,11 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">{{taskItem.title}}</h5>
+        <p class="card-text">{{taskItem.description}}</p>
+        <select [(ngModel)]="taskItem.Type" (change)="onSelectValueChange($event)" class="form-control">
+            <option value="1">ToDo</option>
+            <option value="2">In progress</option>
+            <option value="3">Done</option>
+        </select>
+    </div>
+</div>

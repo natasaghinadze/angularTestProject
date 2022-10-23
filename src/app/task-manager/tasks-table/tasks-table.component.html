@@ -1,0 +1,37 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">ToDo</th>
+            <th scope="col">In Progres</th>
+            <th scope="col">Done</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <app-task-table-card *ngFor="let item of taskTable.Todo" [taskItem]="item">
+                        </app-task-table-card>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <app-task-table-card *ngFor="let item of taskTable.InProgress" [taskItem]="item">
+                        </app-task-table-card>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <app-task-table-card *ngFor="let item of taskTable.Done" [taskItem]="item">
+                        </app-task-table-card>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>

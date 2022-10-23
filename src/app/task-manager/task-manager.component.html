@@ -1,0 +1,8 @@
+<section class="col-md-12 m-auto d-flex justify-content-between">
+    <aside class="left col-md-4">
+        <app-task-filler-form (onTaskSaveEmitter)="onTaskSaveSub($event)"></app-task-filler-form>
+    </aside>
+    <aside class="right col-md-8">
+        <app-tasks-table [taskTable]="tableTask"></app-tasks-table>
+    </aside>
+</section>

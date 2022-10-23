@@ -1,0 +1,14 @@
+<article>
+    <h2>Enter Task Information Here</h2>
+    <div class="form-group">
+        <label for="">Enter task title</label>
+        <input [(ngModel)]="taskItem.title" type="text" placeholder="Enter here" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="">Enter task description</label>
+        <textarea [(ngModel)]="taskItem.description" type="text" placeholder="Enter here" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <button (click)="onSaveTasnBtnClick()" class="btn btn-primary col-md-12 d-block">Save</button>
+    </div>
+</article>
